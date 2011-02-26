@@ -1,5 +1,8 @@
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
+<link rel="stylesheet" type="text/css" href="style.css" />
 <style type="text/css">
 body {
 width:520px;
@@ -8,13 +11,34 @@ margin:0; padding:0; border:0;
 </style>
 <meta http-equiv="Content-Type" content="text/html;
 charset=iso-8859-1" />
+
+<script type=”text/javascript”>
+window.fbAsyncInit = function() {
+FB.Canvas.setSize();
+}
+// Do things that will sometimes call sizeChangeCallback()
+function sizeChangeCallback() {
+FB.Canvas.setSize();
+}
+</script>
 </head>
-<div> <!– float container –>
+    <div id=”fb-root”></div>
+    <script src=”http://connect.facebook.net/en_US/all.js”></script>
+    <script>
+    FB.init({
+    appId : ’185082558195513′,
+    status : true, // check login status
+    cookie : true, // enable cookies to allow the server to access the session
+    xfbml : true // parse XFBML
+    });
 
-<div style="clear:both;"></div>
+    window.fbAsyncInit = function() {
+    FB.Canvas.setAutoResize();
+    }
 
-</div>
-
+    </script>
+<body>
+<div id="container">
 <div style="background-color:#DEF3F2;">
 
 <center>
@@ -73,18 +97,12 @@ var outside_location = document.getElementById('outside_location');
 </P>
 
 
-
-
 <center>
 <img src="http://i55.tinypic.com/2z9l30i.jpg"/>
 </center>
 
 </div>
-
-</div>
-
 </body>
-
 </html>
 
 
