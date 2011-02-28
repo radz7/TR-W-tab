@@ -2,20 +2,21 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
+<script type="text/javascript">
+window.fbAsyncInit = function() {
+FB.Canvas.setSize();
+}
+// Do things that will sometimes call sizeChangeCallback()
+function sizeChangeCallback() {
+FB.Canvas.setSize();
+}
+</script>
 
+Read more: http://www.hyperarts.com/blog/facebook-iframe-apps-getting-rid-of-scrollbars/#ixzz1FG0YXPkh
 </head>
-    <div id=”fb-root”></div>
-    <script src=”http://connect.facebook.net/en_US/all.js”></script>
-    <script>
-    FB.init({
-    appId : ’185082558195513′,
-    status : true, // check login status
-    cookie : true, // enable cookies to allow the server to access the session
-    xfbml : true // parse XFBML
-    });
 
-    </script>
 <body>
+body {overflow:hidden;}
 <div id="container">
 <div style="background-color:#DEF3F2; valign:middle;">
 
@@ -93,5 +94,17 @@ var outside_location = document.getElementById('outside_location');
 </center>
 </div>
 </div>
+</div>
+
+    <div id=”fb-root”></div>
+    <script src=”http://connect.facebook.net/en_US/all.js”></script>
+    <script>
+    FB.init({
+    appId : ’185082558195513′,
+    status : true, // check login status
+    cookie : true, // enable cookies to allow the server to access the session
+    xfbml : true // parse XFBML
+    });
+    </script>
 </body>
 </html>
