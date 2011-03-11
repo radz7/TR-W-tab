@@ -62,12 +62,12 @@ function toggle() {
    id="viewiframe" 
    onclick="DoViewIFRAME('viewiframe','hideiframe','aniframeupstart');" 
    style="line-height: 16px; 
-      font-size: 14px; 
+      font-size: 8; 
       font-weight: bold; 
-      font-family: sans-serif; 
-      color: brown; 
-      background-color: gold;">
-<nobr>[View IFRAME]</nobr>
+      font-family: Gabriola; 
+      color: #E43A81; 
+      cursor: pointer;">
+<nobr>Take a Quiz</nobr>
 </span>
 <span 
    id="hideiframe" 
@@ -91,6 +91,18 @@ function toggle() {
    style="display: none;">
 <iframe name='proprofs' id='proprofs' height='501' width='440' frameborder=0 marginwidth=0 marginheight=0 src='http://www.proprofs.com/quiz-school/widget/v3/?id=82746&bgcolor=ffffff&fcolor=000000&tcolor=000000&w=420&h=295&btncolor=000000'></iframe>
 </div>
+<script type="text/javascript" language="JavaScript"><!--
+function DoViewIFRAME(tid1,tid2,tid3) {
+document.getElementById(tid1).style.display = "none";
+document.getElementById(tid2).style.display = "";
+document.getElementById(tid3).style.display = "";
+}
+function DoHideIFRAME(tid1,tid2,tid3) {
+document.getElementById(tid1).style.display = "none";
+document.getElementById(tid2).style.display = "none";
+document.getElementById(tid3).style.display = "";
+}
+//--></script>
 
 
 </center>
