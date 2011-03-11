@@ -5,11 +5,21 @@
          <title>Teenage RockX ;P</title>
    
           <link rel="shortcut icon" href="favicon.ico" >
-<script language="JavaScript">
-function setVisibility(id, visibility) {
-document.getElementById(id).style.display = none;
-}
+<script language="javascript"> 
+function toggle() {
+	var ele = document.getElementById("toggleText");
+	var text = document.getElementById("displayText");
+	if(ele.style.display == "block") {
+    		ele.style.display = "none";
+		text.innerHTML = "show";
+  	}
+	else {
+		ele.style.display = "block";
+		text.innerHTML = "hide";
+	}
+} 
 </script>
+
 
 </head>
 
@@ -38,10 +48,9 @@ document.getElementById(id).style.display = none;
 
 <center>
 <b>
-<input type=button name=type value='Show Layer' onclick="setVisibility('sub3', 'inline');";><input type=button name=type value='Hide Layer' onclick="setVisibility('sub3', 'none');";>
+<a id="displayText" href="javascript:toggle();"><font face="Gabriola"><font size="8"><font color="#E43A81">Take a Quiz</a> <== click Here
+<div id="toggleText" style="display: none">
 
-<div id="sub3">
-</b>
 <iframe name='proprofs' id='proprofs' height='501' width='440' frameborder=0 marginwidth=0 marginheight=0 
 
 src='http://www.proprofs.com/quiz-school/widget/v3/?id=82746&bgcolor=ffffff&fcolor=000000&tcolor=000000&w=42
