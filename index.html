@@ -58,13 +58,41 @@ function toggle() {
 <center>
 <b>
 
-<a href="#click" onClick="parent.main.Chang('Recieved');">call iframe function</a>
-<br>
+<span 
+   id="viewiframe" 
+   onclick="DoViewIFRAME('viewiframe','hideiframe','aniframeupstart');" 
+   style="line-height: 16px; 
+      font-size: 14px; 
+      font-weight: bold; 
+      font-family: sans-serif; 
+      color: brown; 
+      background-color: gold;">
+<nobr>[View IFRAME]</nobr>
+</span>
+<span 
+   id="hideiframe" 
+   onclick="DoHideIFRAME('hideiframe','aniframeupstart','viewiframe');" 
+   style="display: none; 
+      line-height: 16px; 
+      font-size: 14px; 
+      font-weight: bold; 
+      cursor: pointer; 
+      font-family: sans-serif; 
+      background-color: brown; 
+      color: gold;">
+<nobr><font face="Gabriola"><font size="8"><font color="#E43A81">Take a Quiz</a></nobr>
+</span>
+
+</p>
+
+<div 
+   id="aniframeupstart" 
+   align="center" 
+   style="display: none;">
 <iframe name='proprofs' id='proprofs' height='501' width='440' frameborder=0 marginwidth=0 marginheight=0 src='http://www.proprofs.com/quiz-school/widget/v3/?id=82746&bgcolor=ffffff&fcolor=000000&tcolor=000000&w=420&h=295&btncolor=000000'></iframe>
-<script> vic=0; </script>
-<form name=Show id=Show >
-<input size=10 name=Show1 >
-</form>
+</div>
+
+
 </center>
 
 <center>
