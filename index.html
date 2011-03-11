@@ -31,6 +31,7 @@
 </center>
 
 <br>
+<center>
 <span 
    id="viewiframe" 
    onclick="DoViewIFRAME('viewiframe','hideiframe','aniframeupstart');" 
@@ -42,6 +43,12 @@
       cursor: pointer;">
 <nobr>Take a Quiz</nobr>
 </span>
+<div 
+   id="aniframeupstart" 
+   align="center" 
+   style="display: none;">
+<iframe name='proprofs' id='proprofs' height='501' width='440' frameborder=0 marginwidth=0 marginheight=0 src='http://www.proprofs.com/quiz-school/widget/v3/?id=82746&bgcolor=ffffff&fcolor=000000&tcolor=000000&w=420&h=295&btncolor=000000'></iframe>
+</div>
 <span 
    id="hideiframe" 
    onclick="DoHideIFRAME('hideiframe','aniframeupstart','viewiframe');" 
@@ -54,13 +61,6 @@
       cursor: pointer;">
 <nobr>Hide</nobr>
 </span>
-</p>
-<div 
-   id="aniframeupstart" 
-   align="center" 
-   style="display: none;">
-<iframe name='proprofs' id='proprofs' height='501' width='440' frameborder=0 marginwidth=0 marginheight=0 src='http://www.proprofs.com/quiz-school/widget/v3/?id=82746&bgcolor=ffffff&fcolor=000000&tcolor=000000&w=420&h=295&btncolor=000000'></iframe>
-</div>
 <script type="text/javascript" language="JavaScript"><!--
 function DoViewIFRAME(tid1,tid2,tid3) {
 document.getElementById(tid1).style.display = "none";
@@ -73,6 +73,7 @@ document.getElementById(tid2).style.display = "none";
 document.getElementById(tid3).style.display = "";
 }
 //--></script>
+</center>
 
 <center>
 <img src="http://i1237.photobucket.com/albums/ff478/its-anky/rj2qvs-1.jpg">
