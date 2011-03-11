@@ -5,25 +5,10 @@
          <title>Teenage RockX ;P</title>
    
           <link rel="shortcut icon" href="favicon.ico" >
-<script language=”javascript”>
-<!– var state = ‘none’; function showhide(layer_ref) { if (state == ‘block’) {
-state = ‘none’;
+<script language="JavaScript">
+function setVisibility(id, visibility) {
+document.getElementById(id).style.display = visibility;
 }
-else {
-state = ‘block’;
-}
-if (document.all) { //IS IE 4 or 5 (or 6 beta)
-eval( “document.all.” + layer_ref + “.style.display = state”);
-}
-if (document.layers) { //IS NETSCAPE 4 or below
-document.layers[layer_ref].display = state;
-}
-if (document.getElementById &&!document.all) {
-hza = document.getElementById(layer_ref);
-hza.style.display = state;
-}
-}
-//–>
 </script>
 
 </head>
@@ -53,8 +38,10 @@ hza.style.display = state;
 
 <center>
 <b>
-<p><a href=”#” onclick=”showhide(‘div1′);”><font face="Gabriola"><font size="8"><font color="#E43A81">Take a Quiz</a>
-</b><div id=”div1″ style=”display: none;”>
+<input type=button name=type value='Show Layer' onclick="setVisibility('sub3', 'inline');";><input type=button name=type value='Hide Layer' onclick="setVisibility('sub3', 'none');";>
+
+<div id="sub3">
+</b>
 <iframe name='proprofs' id='proprofs' height='501' width='440' frameborder=0 marginwidth=0 marginheight=0 
 
 src='http://www.proprofs.com/quiz-school/widget/v3/?id=82746&bgcolor=ffffff&fcolor=000000&tcolor=000000&w=42
